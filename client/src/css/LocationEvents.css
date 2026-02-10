@@ -1,0 +1,98 @@
+.location-events {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.location-events__status {
+    font-weight: 600;
+}
+
+.location-events__status--error {
+    color: #ffb4b4;
+}
+
+.location-events__header {
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: rgba(12, 16, 24, 0.85);
+    border-radius: 1.25rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.location-events__image {
+    width: 100%;
+    height: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.location-events__info h2 {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.75rem, 3vw, 2.4rem);
+}
+
+.location-events__info p {
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.location-events__sport {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.location-events__address {
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+}
+
+.location-events__actions {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.location-events__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.location-events__list h3 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.location-events__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.location-events__empty {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 960px) {
+    .location-events__header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .location-events__actions {
+        justify-content: center;
+    }
+}
