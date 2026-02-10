@@ -1,6 +1,6 @@
 # WEB103 Project 3 - *UnityGrid Plaza*
 
-Submitted by: **Abdul-Rashid Zakaria**
+Submitted by: **Student A**
 
 About this web app: **An event management platform for local sports events.**
 
